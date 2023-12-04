@@ -66,11 +66,14 @@ WSGI_APPLICATION = 'SecretSanta.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'FGAB5edCc23*E*a6eeE4a-ddeCe3AGAb',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '58819',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
